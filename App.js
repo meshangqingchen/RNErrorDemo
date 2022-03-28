@@ -142,30 +142,31 @@ export default class App extends Component {
     //     console.warn(warning);
     //   },
     // });
-    global.Promise = Promise1;
-    global.onunhandledrejection = function onunhandledrejection(...e) {
-      // Warning: when running in "remote debug" mode (JS environment is Chrome browser),
-      // this handler is called a second time by Bluebird with a custom "dom-event".
-      // We need to filter this case out:
-      // if (error instanceof Error) {
-      //   if (__DEV__) {
-      //     console.log(`promise unHandle rejection exception:`, error?.stack);
-      //   }
-      //   cb && cb(error);
-      // }
-      //["操作失败!", {"fulfillmentValue": undefined, "isFulfilled": false, "isRejected": true, "rejectionReason": "操作失败!"}]
-      //[[ReferenceError: as is not defined], {"fulfillmentValue": undefined, "isFulfilled": false, "isRejected": true, "rejectionReason": [ReferenceError: as is not defined]}]
-      console.log('eeee = ');
-      console.log('eeee = ', e);
-    };
-    for (let key of Object.keys(global)) {
-      let value = global[key];
-      console.log('lcc_key_value = ' ,key,value);
-    }
+    // global.Promise = Promise1;
+    // global.onunhandledrejection = function onunhandledrejection(...e) {
+    //   // Warning: when running in "remote debug" mode (JS environment is Chrome browser),
+    //   // this handler is called a second time by Bluebird with a custom "dom-event".
+    //   // We need to filter this case out:
+    //   // if (error instanceof Error) {
+    //   //   if (__DEV__) {
+    //   //     console.log(`promise unHandle rejection exception:`, error?.stack);
+    //   //   }
+    //   //   cb && cb(error);
+    //   // }
+    //   //["操作失败!", {"fulfillmentValue": undefined, "isFulfilled": false, "isRejected": true, "rejectionReason": "操作失败!"}]
+    //   //[[ReferenceError: as is not defined], {"fulfillmentValue": undefined, "isFulfilled": false, "isRejected": true, "rejectionReason": [ReferenceError: as is not defined]}]
+    //   console.log('eeee = ');
+    //   console.log('eeee = ', e);
+    // };
+
+    // for (let key of Object.keys(global)) {
+    //   let value = global[key];
+    //   console.log('lcc_key_value = ' ,key,value);
+    // }
 
     const promise = new Promise((resolve, reject) => {
-      as.fun();
-      let status = false;
+      // as.fun();
+      let status = true;
       if (status) {
         resolve('操作成功!');
       } else {
