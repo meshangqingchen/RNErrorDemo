@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@sentry/react": "^6.19.2",
+    "@sentry/tracing": "^6.19.2",
     "bluebird": "^3.7.2",
     "react": "16.9.0",
     "react-native": "0.61.0",
