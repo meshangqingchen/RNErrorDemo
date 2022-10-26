@@ -54,7 +54,7 @@ class BuggyCounter extends React.Component {
     
     // 错误边界可以捕获
     // aaa.fun()
-
+    Object.create(null)
     this.init_();
   }
 
@@ -100,7 +100,7 @@ class BuggyCounter extends React.Component {
   } 
 }
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = { counter: 0 };
@@ -343,4 +343,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// export default App;
+export default App;

@@ -194,7 +194,6 @@
 				458EA8DB23300F1990BBDD48 /* Pods-RNErrorDemoTests.debug.xcconfig */,
 				BE2B6AA59E75A83D70EC0525 /* Pods-RNErrorDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +308,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
