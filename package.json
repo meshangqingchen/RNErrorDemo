@@ -13,6 +13,7 @@
     "@sentry/react": "^6.19.2",
     "@sentry/tracing": "^6.19.2",
     "bluebird": "^3.7.2",
+    "node-xlsx": "^0.21.0",
     "react": "16.9.0",
     "react-native": "0.61.0",
     "react-native-error-boundary": "^1.1.12"
@@ -22,7 +23,11 @@
     "@babel/runtime": "^7.17.7",
     "@react-native-community/eslint-config": "^3.0.1",
     "babel-jest": "^27.5.1",
-    "eslint": "^8.11.0",
+    "eslint": "^8.16.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-native": "^4.0.0",
     "jest": "^27.5.1",
     "metro-react-native-babel-preset": "^0.69.1",
     "react-test-renderer": "16.9.0"

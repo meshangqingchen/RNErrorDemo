@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -14,7 +14,8 @@ import {
   View,
   Text,
   StatusBar,
-  TouchableWithoutFeedback, TouchableHighlight
+  TouchableWithoutFeedback,
+  TouchableHighlight,
 } from 'react-native';
 
 import {
@@ -24,12 +25,12 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { addActiveSceneChangedListener } from 'react-native/Libraries/Utilities/SceneTracker';
+import {addActiveSceneChangedListener} from 'react-native/Libraries/Utilities/SceneTracker';
 
-import ErrorBoundary from './ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary';
 // import ErrorBoundary from 'react-native-error-boundary'
 import Promise1 from 'bluebird';
-import { asArray } from 'bluebird/js/browser/bluebird.core';
+import {asArray} from 'bluebird/js/browser/bluebird.core';
 /*
 
 错误边界 无法 捕获如下错误:
@@ -44,49 +45,48 @@ import { asArray } from 'bluebird/js/browser/bluebird.core';
 class BuggyCounter extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { counter: 0 };
+    this.state = {counter: 0};
     /*
     _globalHandler 可以捕获
     */
     // setTimeout(()=>{
     //   aaa.fun()
     // }, 1000);
-    
+
     // 错误边界可以捕获
     // aaa.fun()
 
     this.init_();
   }
 
-  async init_ () {
-    const resp = await this.mockAsyncHandle() // 执行异常
+  async init_() {
+    const resp = await this.mockAsyncHandle(); // 执行异常
     // 后续代码不会再执行
-    console.log(resp)
+    console.log(resp);
   }
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   onPress() {
-     // 错误边界无法捕获 事件处理
+    // 错误边界无法捕获 事件处理
     // bbb.fun()
   }
 
   mockAsyncHandle() {
-    return new Promise((resolve,reject)=>{
+    return new Promise((resolve, reject) => {
       // _globalHandler 和 错误边界都捕获不到
-      setTimeout(()=>{
-        resolve('aaaa')
+      setTimeout(() => {
+        resolve('aaaa');
       }, 1000);
-    })
+    });
   }
 
-   render() {
+  render() {
     return (
-      <TouchableWithoutFeedback onPress={()=>{
-       this.onPress();
-      }}>
+      <TouchableWithoutFeedback
+        onPress={() => {
+          this.onPress();
+        }}>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>Step One</Text>
           <Text style={styles.sectionDescription}>
@@ -95,24 +95,23 @@ class BuggyCounter extends React.Component {
           </Text>
         </View>
       </TouchableWithoutFeedback>
-      
-    )  
-  } 
+    );
+  }
 }
 
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { counter: 0 };
+    this.state = {counter: 0};
   }
-  
+
   componentDidMount() {
     // require('promise/setimmediate/rejection-tracking').enable({
     //   allRejections: true,
     //   onUnhandled: (id, error = {}) => {
     //     let message
     //     let stack
-  
+
     //     const stringValue = Object.prototype.toString.call(error);
     //     if (stringValue === '[object Error]') {
     //       message = Error.prototype.toString.call(error);
@@ -123,7 +122,7 @@ export default class App extends Component {
     //        * this comment and run Flow. */
     //       message = require('pretty-format')(error);
     //     }
-  
+
     //     const warning =
     //       `Possible Unhandled Promise Rejection (id: ${id}):\n` +
     //       `${message}\n` +
@@ -173,21 +172,20 @@ export default class App extends Component {
         reject('操作失败!');
       }
     });
-    
-    promise.then(res => {
+
+    promise.then((res) => {
       console.log('成功结果：' + res);
     });
   }
 
-
-  render () {
-    const CustomFallback = (props: { error: Error, resetError: Function }) => (
+  render() {
+    const CustomFallback = (props: {error: Error, resetError: Function}) => (
       <View>
         <Text>Something happened!</Text>
         <Text>{props.error.toString()}</Text>
         <Button onPress={props.resetError} title={'Try again'} />
       </View>
-    )
+    );
     return (
       <ErrorBoundary FallbackComponent={CustomFallback}>
         <StatusBar barStyle="dark-content" />
@@ -203,7 +201,7 @@ export default class App extends Component {
             )}
             <View style={styles.body}>
               <ErrorBoundary>
-                <BuggyCounter/>
+                <BuggyCounter />
               </ErrorBoundary>
               <View style={styles.sectionContainer}>
                 <Text style={styles.sectionTitle}>See Your Changes</Text>
@@ -227,22 +225,22 @@ export default class App extends Component {
             </View>
           </ScrollView>
         </SafeAreaView>
-
       </ErrorBoundary>
     );
   }
 
-  renderStepOne () {
+  renderStepOne() {
     if (this.state.counter === 5) {
       // Simulate a JS error
       // console.log(xxx)
       throw new Error('I crashed!');
     }
     return (
-      <TouchableWithoutFeedback onPress={()=>{
-        const counter = this.state.counter + 1;
-        this.setState({counter: counter});
-      }}>
+      <TouchableWithoutFeedback
+        onPress={() => {
+          const counter = this.state.counter + 1;
+          this.setState({counter: counter});
+        }}>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>Step One</Text>
           <Text style={styles.sectionDescription}>
@@ -251,9 +249,8 @@ export default class App extends Component {
           </Text>
         </View>
       </TouchableWithoutFeedback>
-      
-    )  
-  } 
+    );
+  }
 }
 
 // const App: () => React$Node = () => {
