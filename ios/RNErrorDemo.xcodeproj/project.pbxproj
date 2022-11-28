@@ -17,6 +17,12 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNErrorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNErrorDemoTests.m */; };
+		438B13E9293216A50050038E /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B13E7293216A50050038E /* VideoView.m */; };
+		438B13EA293216A50050038E /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B13E7293216A50050038E /* VideoView.m */; };
+		438B13F1293217020050038E /* VideoContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B13F0293217020050038E /* VideoContentView.m */; };
+		438B13F2293217020050038E /* VideoContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B13F0293217020050038E /* VideoContentView.m */; };
+		438B13F9293218120050038E /* RCTVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B13F8293218120050038E /* RCTVideoViewManager.m */; };
+		438B13FA293218120050038E /* RCTVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B13F8293218120050038E /* RCTVideoViewManager.m */; };
 		839807B32796BE82BEC7C1FB /* libPods-RNErrorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 199DA1C42AFAB0E33243D09F /* libPods-RNErrorDemo.a */; };
 		9EAC8B20EAD329CDB9137328 /* libPods-RNErrorDemo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2EEFF7827597992F2AC993 /* libPods-RNErrorDemo-tvOS.a */; };
 		F7BB318523D61620C6CFAEA6 /* libPods-RNErrorDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952BE6C5DE99CECBFD2986F /* libPods-RNErrorDemoTests.a */; };
@@ -58,6 +64,12 @@
 		3023F055F8446E531ABE2FE5 /* libPods-RNErrorDemo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNErrorDemo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3952BE6C5DE99CECBFD2986F /* libPods-RNErrorDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNErrorDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4235B17C42B3EDAC268CBD01 /* Pods-RNErrorDemo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNErrorDemo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNErrorDemo-tvOSTests/Pods-RNErrorDemo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		438B13E7293216A50050038E /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoView.m; path = RNErrorDemo/VideoView.m; sourceTree = "<group>"; };
+		438B13E8293216A50050038E /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoView.h; path = RNErrorDemo/VideoView.h; sourceTree = "<group>"; };
+		438B13EF293217020050038E /* VideoContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VideoContentView.h; path = RNErrorDemo/VideoContentView.h; sourceTree = "<group>"; };
+		438B13F0293217020050038E /* VideoContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VideoContentView.m; path = RNErrorDemo/VideoContentView.m; sourceTree = "<group>"; };
+		438B13F7293218120050038E /* RCTVideoViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTVideoViewManager.h; path = RNErrorDemo/RCTVideoViewManager.h; sourceTree = "<group>"; };
+		438B13F8293218120050038E /* RCTVideoViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTVideoViewManager.m; path = RNErrorDemo/RCTVideoViewManager.m; sourceTree = "<group>"; };
 		458EA8DB23300F1990BBDD48 /* Pods-RNErrorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNErrorDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-RNErrorDemoTests/Pods-RNErrorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5870B2A40EB3DE78FF9CA599 /* Pods-RNErrorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNErrorDemo.release.xcconfig"; path = "Target Support Files/Pods-RNErrorDemo/Pods-RNErrorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6CFE33A0F27B7C4946E3B333 /* Pods-RNErrorDemo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNErrorDemo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNErrorDemo-tvOSTests/Pods-RNErrorDemo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +140,12 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				438B13E8293216A50050038E /* VideoView.h */,
+				438B13E7293216A50050038E /* VideoView.m */,
+				438B13EF293217020050038E /* VideoContentView.h */,
+				438B13F0293217020050038E /* VideoContentView.m */,
+				438B13F7293218120050038E /* RCTVideoViewManager.h */,
+				438B13F8293218120050038E /* RCTVideoViewManager.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -194,7 +212,6 @@
 				458EA8DB23300F1990BBDD48 /* Pods-RNErrorDemoTests.debug.xcconfig */,
 				BE2B6AA59E75A83D70EC0525 /* Pods-RNErrorDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +326,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -548,6 +566,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				438B13F9293218120050038E /* RCTVideoViewManager.m in Sources */,
+				438B13E9293216A50050038E /* VideoView.m in Sources */,
+				438B13F1293217020050038E /* VideoContentView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +578,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				438B13FA293218120050038E /* RCTVideoViewManager.m in Sources */,
+				438B13EA293216A50050038E /* VideoView.m in Sources */,
+				438B13F2293217020050038E /* VideoContentView.m in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

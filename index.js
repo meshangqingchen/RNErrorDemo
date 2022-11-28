@@ -7,6 +7,8 @@ import {AppRegistry} from 'react-native';
 import AppTest from './AppTest';
 import PluginTest from './PluginTest';
 import {name as appName} from './app.json';
+import RRVideoViewer from './RRVideoViewer';
+import RRVideoViewerDemo from './RRVideoViewerDemo';
 
 // import * as Sentry from "@sentry/react";
 // import { BrowserTracing } from "@sentry/tracing";
@@ -18,4 +20,4 @@ import {name as appName} from './app.json';
 //     // for finer control
 //     tracesSampleRate: 1.0,
 //   });
-AppRegistry.registerComponent(appName, () => PluginTest);
+AppRegistry.registerComponent(appName, () => RRVideoViewerDemo);
