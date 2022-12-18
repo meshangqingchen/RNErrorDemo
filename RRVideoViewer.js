@@ -179,39 +179,39 @@ RRVideoViewer.defaultProps = {
   saveToLocalByLongPress: false,
 };
 
-const styles = StyleSheet.create({
-  modalHeaderContainer: {
-    position: 'absolute',
-    width: '100%',
-    alignItems: 'center',
-    marginTop: 30,
-    zIndex: 100,
-  },
-  modalHeaderContentContainer: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    backgroundColor: 'rgba(0,0,0,0.25)',
-    borderRadius: 8,
-    alignItems: 'center',
-  },
-  fullFooter: {
-    flex: 1,
-    backgroundColor: 'transparent',
-  },
-  footer: {
-    height: 28,
-    width: 46,
-    backgroundColor: '#3B3C3D',
-    borderRadius: 4,
-    position: 'absolute',
-    bottom: 45,
-    right: 15,
-  },
-  confirmMain: {},
-  footerText: {
-    fontSize: 11,
-    color: '#FFFFFF',
-    lineHeight: 28,
-    textAlign: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   modalHeaderContainer: {
+//     position: 'absolute',
+//     width: '100%',
+//     alignItems: 'center',
+//     marginTop: 30,
+//     zIndex: 100,
+//   },
+//   modalHeaderContentContainer: {
+//     paddingHorizontal: 10,
+//     paddingVertical: 5,
+//     backgroundColor: 'rgba(0,0,0,0.25)',
+//     borderRadius: 8,
+//     alignItems: 'center',
+//   },
+//   fullFooter: {
+//     flex: 1,
+//     backgroundColor: 'transparent',
+//   },
+//   footer: {
+//     height: 28,
+//     width: 46,
+//     backgroundColor: '#3B3C3D',
+//     borderRadius: 4,
+//     position: 'absolute',
+//     bottom: 45,
+//     right: 15,
+//   },
+//   confirmMain: {},
+//   footerText: {
+//     fontSize: 11,
+//     color: '#FFFFFF',
+//     lineHeight: 28,
+//     textAlign: 'center',
+//   },
+// });
