@@ -10,13 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@sentry/react": "^6.19.2",
-    "@sentry/tracing": "^6.19.2",
+    "@sentry/react": "^7.16.0",
     "bluebird": "^3.7.2",
     "node-xlsx": "^0.21.0",
     "react": "16.9.0",
     "react-native": "0.61.0",
-    "react-native-error-boundary": "^1.1.12"
+    "react-native-error-boundary": "^1.1.12",
+    "source-map": "^0.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.17.7",

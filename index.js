@@ -6,6 +6,8 @@ import {AppRegistry} from 'react-native';
 // import App from './App';
 import AppTest from './AppTest';
 import PluginTest from './PluginTest';
+import App from './App';
+import AppTest from './AppTest';
 import {name as appName} from './app.json';
 import RRVideoViewer from './RRVideoViewer';
 import RRVideoViewerDemo from './RRVideoViewerDemo';
@@ -21,3 +23,5 @@ import RRVideoViewerDemo from './RRVideoViewerDemo';
 //     tracesSampleRate: 1.0,
 //   });
 AppRegistry.registerComponent(appName, () => RRVideoViewerDemo);
+// AppRegistry.registerComponent(appName, () => App);
+// AppRegistry.registerComponent(appName, () => AppTest);
